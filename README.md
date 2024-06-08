@@ -17,10 +17,13 @@ The dataset is available [here](https://www.kaggle.com/competitions/avazu-ctr-pr
 
 
 ## Conclusion
--
--
--
--
+
+- Conducted an extensively interactive component-decomposed visualization analysis on a 10GB+ advertisement data after
+ETL; developed baseline tree-based and feature-pair aware matrix factorization model for highly mixed type dataset.
+- Introduced DeepFM models to automatically grasp feature correlation after type-based column segamentation and sparse/
+dense representation; enhanced performance by optimizing ROI in PPC campaigns with 3% increase in AUC.
+- Implemented a Wide & Deep hybrid model with feature reduction and cross-feature generation; applied customized en-
+coding techniques for cardinality-varying features, achieving an additional 3% increase in AUC.
 
 ## Reference
 
