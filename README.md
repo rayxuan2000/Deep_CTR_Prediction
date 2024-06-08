@@ -11,9 +11,10 @@ The dataset is available [here](https://www.kaggle.com/competitions/avazu-ctr-pr
 
 ## Some key notes from this project
 
-numeric? categorical?
+- The first problem is very tricky. According to the original dataset description, some variables are anonymized categorical but is represented in a int64 type. At first when I applied wide & Deep model, I tend to first convert all columns (except target column) into object type then do the rest steps. But in the end, AUC score is pretty much the same as gradient boost machine, sometimes even worse. But when I directly use the original data type, did label encoding for all the categorical type and one-hot encoding for the shallow features (cardinality<=100) as **wide features**, manually select some high-cardinality categorical features as **deep features**, it turned out to be better.
 
-use all features in wide & deep?
+- It's another point that I want to write down here, I didn't use all the non-shallow features as deep features. This may lead to some cross-features not used in the end. But I actually checked a lot of resources and found that there were a lot of flexibilities and variations here [exmaple 1](https://wngaw.github.io/wide-and-deep-learning/)[example 2](https://chromium.googlesource.com/external/github.com/tensorflow/tensorflow/+/r0.10/tensorflow/g3doc/tutorials/wide_and_deep/index.md). It's up to you to decide how to select features in the end.
+
 
 ## Conclusion
 -
