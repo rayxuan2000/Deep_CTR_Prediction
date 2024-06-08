@@ -5,6 +5,10 @@ In the realm of online advertising, many campaigns operate on a 'pay-per-click' 
 
 In this project, I will use several models, mainly divided into matrix factorization based method, tree-based method and deep models, to predict CTR in a dataset.
 
+
+## Dataset
+The dataset is available [here](https://www.kaggle.com/competitions/avazu-ctr-prediction/overview).
+
 ## Some key notes from this project
 
 numeric? categorical?
@@ -16,3 +20,9 @@ use all features in wide & deep?
 -
 -
 -
+
+## Reference
+
+Wide & Deep: [link](https://arxiv.org/pdf/1606.07792)
+
+DeepFM: [link](https://arxiv.org/pdf/1703.04247)
